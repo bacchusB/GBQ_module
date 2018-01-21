@@ -8,7 +8,7 @@ from google.cloud import bigquery
 import requests
 
 
-class TableNamesError():pass
+class TableNamesError(Exception):pass
 
 def credentials(KEY_FILE):
     """Input filepath to json file to get credentials
